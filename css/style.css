@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+
+.container{
+    width:100vw;
+    height: 100vh;
+    background-color: black;
+    padding: .3rem .5rem;
+    display: flex;
+}
+
+/*           All    box  */
+
+.box{
+    width: 25vw;
+    color: rgb(182, 182, 182);
+    background-color: rgba(60, 60, 60, 0.4);
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 7px;
+}
+
+/*            box  */
+
+.left{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.left-top{
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    cursor: pointer;
+}
+
+.logo:hover{
+    color: white;
+}
+
+.left i{
+    font-size: 1.4rem;
+}
+
+.logo h4{
+    width: 87%;
+}
+
+.spotify h4{
+    width: 92%;
+    color: white;
+}
+
+.spotify i{
+    color: white;
+}
+
+/*           box 2 */
+
+.left-bottom{
+    height: 65vh;
+    padding: 0rem 1rem;
+}
+
+.bottom-header{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.bottom-header h4{
+    width: 80%;
+}
+
+.bottom-middle{
+    height: 50%;
+    background-color: gray;
+}
+
+.bottom-footer{
+    height: 40%;
+    padding: 1.4rem .5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom-footer .options{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bottom-footer p{
+    font-size: .8rem;
+    padding: .5rem;
+}
+
+.bottom-footer .lang{
+    border: 2px solid ;
+    border-radius: 25px;
+    height: 4vh;
+    width: 6vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin: 1rem .5rem;
+}
+
+.lang i{
+    font-size: 1rem;
+}
+
+        /*         right side */
+
+.right{
+    height: 87vh;
+    width: 70vw;
+    color: rgb(182, 182, 182);
+    background-color: rgba(60, 60, 60, 0.4);
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 7px;
+    flex: 3;
+    /* overflow: auto; */
+    position: relative;
+}
+
+.right-header{
+    height: 10%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    /* margin: 7px; */
+    top: 0;
+    left: 0;
+    padding: 1rem 2rem;
+}
+
+.arrow{
+    height: 40px;
+    width: 40px;
+    font-size: 1.5rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 50%;
+    transform: rotate(90deg);
+}
+
+.left-arrow{
+    transform: rotate(-90deg);
+}
+
+.right-header button{
+    padding: .8rem 2rem;
+    border: none;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    transition: .2s ease;
+}
+
+.login-btns{
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right-header .log-in{
+    background-color: white;
+}
+
+.right-header .sign-up{
+    background-color: transparent;
+    color: rgb(182, 182, 182);
+    padding: .8rem 1rem;
+}
+
+.sign-up:hover{
+    color: white;
+}
+
+button:focus{
+    outline: none;
+}
+button:hover{
+    transform: scale(1.03);
+}
+
+
+/*     right middle top */
+
+.right-middle-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3.4rem 1rem
+}
+.right-middle-top h2{
+    color: white;
+}
